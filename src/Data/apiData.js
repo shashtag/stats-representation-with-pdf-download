@@ -1,8 +1,7 @@
 const apiData = [
   {
     portfolioName: "Auditzy",
-    page: "63206cb21824eed48c08ccaa",
-    pageName: "demo",
+    pageName: "Demo",
     performance: 87,
     accessibility: 91,
     seo: 100,
@@ -22,11 +21,10 @@ const apiData = [
     clsDisplayValue: "0.047",
     network: "normal4g",
     device: "desktop",
-    region: "Paris, France"
+    region: "Paris, France",
   },
   {
     portfolioName: "Auditzy",
-    page: "63206ac41824eed48c08c8d8",
     pageName: "Home",
     performance: 81,
     accessibility: 96,
@@ -47,8 +45,8 @@ const apiData = [
     clsDisplayValue: "0.038",
     network: "desktopDense4G",
     device: "desktop",
-    region: "Mumbai, India"
-  }
+    region: "Mumbai, India",
+  },
 ];
 
 export default apiData;
