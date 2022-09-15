@@ -23,6 +23,7 @@ const apiData = [
     network: "normal4g",
     device: "desktop",
     region: "Paris, France",
+    createdAt: "2022-09-13T11:43:22.450Z",
   },
   {
     portfolioName: "Auditzy",
@@ -48,6 +49,7 @@ const apiData = [
     network: "desktopDense4G",
     device: "desktop",
     region: "Mumbai, India",
+    createdAt: "2022-09-13T11:36:05.849Z",
   },
 ];
 

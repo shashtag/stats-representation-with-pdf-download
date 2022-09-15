@@ -1,9 +1,9 @@
 const navigation = [
-  { name: "Performance" },
-  { name: "Accessibility" },
-  { name: "SEO" },
-  { name: "Best Practices" },
-  { name: "PWA" },
+  "Performance",
+  "Accessibility",
+  "SEO",
+  "Best Practices",
+  "PWA",
 ];
 
 export default navigation;

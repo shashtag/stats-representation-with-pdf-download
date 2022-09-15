@@ -12,4 +12,11 @@ declare global {
     display: string | number;
     id: string;
   };
+  type AuditDetailsType = {
+    id: string;
+    network: string;
+    device: string;
+    region: string;
+    createdAt: string;
+  };
 }

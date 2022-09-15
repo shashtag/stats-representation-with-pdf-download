@@ -1,12 +1,12 @@
-import React from "react";
-
 type Props = {
   max: number;
   webPages: WebPageType[];
-  barValues: BarValueType[] | null;
+  barValues: BarValueType[];
+  auditDetails: AuditDetailsType[];
+  rev?: boolean;
 };
 
-const StatsRep = ({ max, webPages, barValues }: Props) => {
+const StatsRep = ({ max, webPages, barValues, auditDetails, rev }: Props) => {
   return (
     <div className='grid grid-cols-stats '>
       <div>
@@ -31,21 +31,33 @@ const StatsRep = ({ max, webPages, barValues }: Props) => {
           <div className='border-l-2 border-dashed border-gray-500 '></div>
         </div>
         <div className='absolute w-full h-full -top-6 '>
-          {barValues?.map((value) => {
+          {barValues?.map((value, i) => {
             let percent = (value.value * 100) / max;
 
             return (
               <div className='my-10 ' key={value.id}>
-                <div>gg</div>
+                <div className='bg-white capitalize w-max'>
+                  {auditDetails[i].device}, {auditDetails[i].region},{" "}
+                  {auditDetails[i].network},{" "}
+                  {new Intl.DateTimeFormat("en-IN", {
+                    dateStyle: "medium",
+                    timeStyle: "full",
+                  }).format(new Date(auditDetails[i].createdAt))}
+                </div>
                 <div
                   style={{
                     width: `${percent}%`,
-                    background:
-                      percent >= 90
+                    background: rev
+                      ? percent <= 90
                         ? "#1D893E"
-                        : percent >= 80
+                        : percent <= 95
                         ? "#F1B44C"
-                        : "#EB201F",
+                        : "#EB201F"
+                      : percent >= 90
+                      ? "#1D893E"
+                      : percent >= 80
+                      ? "#F1B44C"
+                      : "#EB201F",
                   }}
                   className='rounded-r-md h-8 flex align-middle justify-end'>
                   <div className='flex mx-2 mt-1 text-white font-bold'>

@@ -1,12 +1,16 @@
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 
-const Header = () => {
+type Props = {
+  page: string;
+};
+
+const Header = ({ page }: Props) => {
   return (
     <header className='bg-white shadow'>
       <div className='mx-auto max-w-7xl py-6 px-8'>
-        <h2 className='text-3xl font-bold tracking-tight mb-4 text-gray-900'>
+        <h1 className='text-3xl font-bold tracking-tight mb-4 text-gray-900'>
           Multiple Comparison Analysis
-        </h2>
+        </h1>
         <div className='flex'>
           <div>
             <p>
@@ -19,6 +23,9 @@ const Header = () => {
             Download PDF <ArrowDownTrayIcon className='block h-6 w-6 ml-6' />
           </div>
         </div>
+        <h3 className='text-2xl mt-4 font-bold tracking-tight -mb-2 text-gray-900'>
+          {page}
+        </h3>
       </div>
     </header>
   );
