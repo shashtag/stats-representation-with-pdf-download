@@ -3,7 +3,7 @@ import { Disclosure } from "@headlessui/react";
 
 import navigation from "../Data/navigation";
 
-function classNames(...classes: any) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 

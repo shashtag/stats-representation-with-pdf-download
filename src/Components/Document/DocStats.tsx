@@ -1,5 +1,5 @@
 import React from "react";
-import StatsRep from "./StatsRep";
+import StatsRep from "../StatsRep";
 
 type Props = {
   max: number;

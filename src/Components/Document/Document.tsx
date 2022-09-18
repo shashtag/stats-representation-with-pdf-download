@@ -1,7 +1,7 @@
-import logo from "../Assets/logo.png";
+import logo from "../../Assets/logo.png";
 import DocStats from "./DocStats";
 import Footer from "./Footer";
-import useFormatData from "../Hooks/useFormatData";
+import useFormatData from "../../Hooks/useFormatData";
 // import { LegacyRef } from "react";
 // import AboutPoint from "./AboutPoint";
 // import features from "../Assets/features.png";

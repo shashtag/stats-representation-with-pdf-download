@@ -5,7 +5,7 @@ import Header from "./Header";
 import useFormatData from "../Hooks/useFormatData";
 import performanceMetricsTitles from "../Data/performanceMetricsTitles";
 
-function classNames(...classes: any) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 export default function Hero() {
