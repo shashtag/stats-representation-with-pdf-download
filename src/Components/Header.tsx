@@ -1,6 +1,6 @@
 import Download from "./Download";
 import { useRef } from "react";
-// import ReactToPrint from "react-to-print";
+import ReactToPrint from "react-to-print";
 import Document from "./Document";
 
 type Props = {
@@ -29,12 +29,12 @@ const Header = ({ page }: Props) => {
             </p>
           </div>
           <Download eRef={ref} />
-          {/* <div>
+          <div>
             <ReactToPrint
               trigger={() => <button>v2</button>}
               content={() => ref.current}
             />
-          </div> */}
+          </div>
         </div>
         <h3 className='text-2xl mt-4 font-bold tracking-tight -mb-2 text-gray-900'>
           {page}
