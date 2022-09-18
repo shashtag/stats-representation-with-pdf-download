@@ -1,7 +1,6 @@
 import Download from "./Download";
 import { useRef } from "react";
-
-import ReactToPrint from "react-to-print";
+// import ReactToPrint from "react-to-print";
 import Document from "./Document";
 
 type Props = {
