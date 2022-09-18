@@ -12,9 +12,12 @@
     "@types/node": "^16.11.59",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
+    "html-to-image": "^1.10.8",
+    "jspdf": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-to-print": "^2.14.7",
     "typescript": "^4.8.3",
     "web-vitals": "^2.1.4"
   },

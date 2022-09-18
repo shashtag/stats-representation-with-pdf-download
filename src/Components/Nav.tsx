@@ -22,7 +22,7 @@ const Nav = ({ page, setPage }: Props) => {
               <img
                 className='h-8 w-24'
                 src='https://auditzy-prod.s3.ap-south-1.amazonaws.com/auditzy+black+logo.png'
-                alt='Your Company'
+                alt='Auditzy logo'
               />
             </div>
             <div className='hidden md:block'>
