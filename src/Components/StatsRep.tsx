@@ -44,7 +44,7 @@ const StatsRep = ({
                   ? "-translate-x-[50%] w-max absolute -bottom-4"
                   : "-translate-x-[50%] w-max absolute -bottom-7"
               }>
-              {(max / 10) * 1}
+              {Math.round((max / 10) * 1 + Number.EPSILON) / 1000}
             </div>
           </div>
           <div className='border-l-2 border-dashed border-gray-500 '>
@@ -54,7 +54,7 @@ const StatsRep = ({
                   ? "-translate-x-[50%] w-max absolute -bottom-4"
                   : "-translate-x-[50%] w-max absolute -bottom-7"
               }>
-              {(max / 10) * 2}
+              {Math.round((max / 10) * 2 + Number.EPSILON) / 1000}
             </div>
           </div>
           <div className='border-l-2 border-dashed border-gray-500 '>
@@ -64,7 +64,7 @@ const StatsRep = ({
                   ? "-translate-x-[50%] w-max absolute -bottom-4"
                   : "-translate-x-[50%] w-max absolute -bottom-7"
               }>
-              {(max / 10) * 3}
+              {Math.round((max / 10) * 3 + Number.EPSILON) / 1000}
             </div>
           </div>
           <div className='border-l-2 border-dashed border-gray-500 '>
@@ -74,7 +74,7 @@ const StatsRep = ({
                   ? "-translate-x-[50%] w-max absolute -bottom-4"
                   : "-translate-x-[50%] w-max absolute -bottom-7"
               }>
-              {(max / 10) * 4}
+              {Math.round((max / 10) * 4 + Number.EPSILON) / 1000}
             </div>
           </div>
           <div className='border-l-2 border-dashed border-gray-500 '>
@@ -84,7 +84,7 @@ const StatsRep = ({
                   ? "-translate-x-[50%] w-max absolute -bottom-4"
                   : "-translate-x-[50%] w-max absolute -bottom-7"
               }>
-              {(max / 10) * 5}
+              {Math.round((max / 10) * 5 + Number.EPSILON) / 1000}
             </div>
           </div>
           <div className='border-l-2 border-dashed border-gray-500 '>
@@ -94,7 +94,7 @@ const StatsRep = ({
                   ? "-translate-x-[50%] w-max absolute -bottom-4"
                   : "-translate-x-[50%] w-max absolute -bottom-7"
               }>
-              {(max / 10) * 6}
+              {Math.round((max / 10) * 6 + Number.EPSILON) / 1000}
             </div>
           </div>
           <div className='border-l-2 border-dashed border-gray-500 '>
@@ -104,7 +104,7 @@ const StatsRep = ({
                   ? "-translate-x-[50%] w-max absolute -bottom-4"
                   : "-translate-x-[50%] w-max absolute -bottom-7"
               }>
-              {(max / 10) * 7}
+              {Math.round((max / 10) * 7 + Number.EPSILON) / 1000}
             </div>
           </div>
           <div className='border-l-2 border-dashed border-gray-500 '>
@@ -114,7 +114,7 @@ const StatsRep = ({
                   ? "-translate-x-[50%] w-max absolute -bottom-4"
                   : "-translate-x-[50%] w-max absolute -bottom-7"
               }>
-              {(max / 10) * 8}
+              {Math.round((max / 10) * 8 + Number.EPSILON) / 1000}
             </div>
           </div>
           <div className='border-l-2 border-dashed border-gray-500 '>
@@ -124,7 +124,7 @@ const StatsRep = ({
                   ? "-translate-x-[50%] w-max absolute -bottom-4"
                   : "-translate-x-[50%] w-max absolute -bottom-7"
               }>
-              {(max / 10) * 9}
+              {Math.round((max / 10) * 9 + Number.EPSILON) / 1000}
             </div>
             <div
               className={
@@ -132,7 +132,7 @@ const StatsRep = ({
                   ? "translate-x-[50%] right-0 w-max absolute -bottom-4"
                   : "translate-x-[50%] right-0 w-max absolute -bottom-7"
               }>
-              {max}
+              {Math.round(max + Number.EPSILON) / 1000}
             </div>
           </div>
         </div>

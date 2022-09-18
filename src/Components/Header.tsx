@@ -31,7 +31,11 @@ const Header = ({ page }: Props) => {
           <Download eRef={ref} />
           <div>
             <ReactToPrint
-              trigger={() => <button>v2</button>}
+              trigger={() => (
+                <button className='flex justify-center p-3 ml-4'>
+                  <div>V2</div>
+                </button>
+              )}
               content={() => ref.current}
             />
           </div>
