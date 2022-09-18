@@ -42,7 +42,8 @@ export default function Hero() {
       <main className='bg-gray-200 mx-auto max-w-7xl p-8 '>
         <div className='bg-white shadow rounded-md p-8'>
           <Stats
-            max={100}
+            //normalize max by mul *1000
+            max={100000}
             webPages={webPages}
             barValues={
               page === "Performance"
@@ -81,7 +82,7 @@ export default function Hero() {
             </div>
             <div className='bg-white shadow rounded-md p-8'>
               <Stats
-              rev={true}
+                rev={true}
                 max={
                   performanceTitle === "Time to Interactive"
                     ? maxtti

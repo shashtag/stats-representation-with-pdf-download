@@ -12,9 +12,9 @@ const Header = ({ page }: Props) => {
 
   return (
     <header className='bg-white shadow'>
-      <div className='h-0 w-0 overflow-hidden'>
-        <Document eRef={ref} />
-      </div>
+      {/* <div className='h-0 w-0 overflow-hidden'> */}
+      <Document eRef={ref} />
+      {/* </div> */}
 
       <div className='mx-auto max-w-7xl py-6 px-8'>
         <h1 className='text-3xl font-bold tracking-tight mb-4 text-gray-900'>

@@ -138,7 +138,9 @@ const StatsRep = ({
         </div>
         <div className='absolute w-full h-full -top-6 '>
           {barValues?.map((value, i) => {
-            let percent = (value.value * 100) / max;
+            let percent = rev
+              ? (value.value * 100) / max
+              : (value.value * 100000) / max;
 
             return (
               <div className='my-10 ' key={value.id}>

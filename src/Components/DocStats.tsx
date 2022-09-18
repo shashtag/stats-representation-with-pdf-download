@@ -28,7 +28,7 @@ const DocStats: React.FC<Props> = ({
       <div className='bg-gray-200 rounded-b-md p-8'>
         <StatsRep
           doc={true}
-          max={max}
+          max={max * 1000}
           webPages={webPages}
           barValues={barValues}
           auditDetails={auditDetails}
