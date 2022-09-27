@@ -1,6 +1,6 @@
 const apiData = [
   {
-    portfolioName: "Auditzy",
+    portfolioName: "Company",
     page: "63206cb21824eed48c08ccaa",
     pageName: "Demo",
     performance: 87,
@@ -26,7 +26,7 @@ const apiData = [
     createdAt: "2022-09-13T11:43:22.450Z",
   },
   {
-    portfolioName: "Auditzy",
+    portfolioName: "Company",
     page: "63206ac41824eed48c08c8d8",
     pageName: "Home",
     performance: 81,

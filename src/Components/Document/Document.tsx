@@ -22,10 +22,10 @@ const Document = ({ eRef }: Props) => {
       <div className='flex w-full px-8 py-6 justify-between align-middle'>
         <div className='flex-shrink-0'>
           <a href='/'>
-            <img className='h-16 w-48' src={logo} alt='Auditzy logo' />
+            {/* <img className='h-16 w-48' src={logo} alt='logo' /> */}
           </a>
         </div>
-        <div className='text-3xl font-bold my-auto h-max'>Auditzy Insights</div>
+        <div className='text-3xl font-bold my-auto h-max'>Insights</div>
       </div>
       <div className='flex'>
         <div className='flex-1 h-[5px] bg-[#1D893E]'></div>
@@ -119,7 +119,7 @@ const Document = ({ eRef }: Props) => {
           voluptatibus explicabo recusandae distinctio quam labore.
         </DocStats>
         {/* <h2 className='text-3xl font-extrabold text-[#6E83EA] mb-4 mt-20'>
-            About Auditzy
+            About 
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas

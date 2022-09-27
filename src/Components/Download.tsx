@@ -9,32 +9,17 @@ type Props = {
 const Download = ({ eRef }: Props) => {
   const handleDownload = () => {
     if (eRef.current) {
-      // console.log(eRef.current);
-      // htmlToImage.toPng(eRef.current, { quality: 1 }).then(function (dataUrl) {
-      //   const pdf = new jsPDF();
-      //   const imgProps = pdf.getImageProperties(dataUrl);
-      //   const pdfWidth = pdf.internal.pageSize.getWidth();
-      //   const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-
-      //   // const x = 0;
-      //   // let y = 0;
-      //   // const
-      //   pdf.addImage(dataUrl, "PNG", 0, 0, pdfWidth, pdfHeight);
-      //   pdf.link(5, 5, 33, 12, { url: "https://www.auditzy.com/" });
-      //   pdf.save("download.pdf");
-      // });
       var doc = new jsPDF({
         unit: "px",
         format: [eRef.current.clientHeight + 5, window.innerWidth],
       });
       doc.html(eRef.current, {
         callback: function (doc) {
-          doc.save("Auditzy Insights");
+          doc.save("Insights");
         },
         autoPaging: "text",
         x: 0,
         y: 0,
-        // windowWidth:,
       });
     }
   };
